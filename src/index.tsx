@@ -2,11 +2,13 @@ import React, { ReactElement } from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
+import { ThemeProvider } from '@material-ui/styles';
 
 import store from 'reducers';
 import { history } from 'reducers/router';
 import Routes from 'routes';
 
+import theme from './theme';
 import './styles.css';
 import * as serviceWorker from './serviceWorker';
 
@@ -15,7 +17,9 @@ const root = document.getElementById('root');
 const AppContainer = (): ReactElement => (
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <Routes />
+      <ThemeProvider theme={theme}>
+        <Routes />
+      </ThemeProvider>
     </ConnectedRouter>
   </Provider>
 );

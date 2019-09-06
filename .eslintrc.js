@@ -70,4 +70,19 @@ module.exports = {
       typescript: {},
     },
   },
+  overrides: [
+    {
+      files: ['*.test.tsx'],
+      rules: {
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
+      },
+    },
+    {
+      files: ['styles.ts'],
+      rules: {
+        '@typescript-eslint/explicit-function-return-type': 'off',
+      },
+    },
+  ],
 };
