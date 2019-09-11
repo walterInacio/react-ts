@@ -1,6 +1,6 @@
 const Routes = {
-  ROOT: '/',
-  APP: '/app',
+  APP: '/',
+  LOGIN: '/login',
 };
 
 export default Routes;
