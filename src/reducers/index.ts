@@ -1,5 +1,6 @@
 import { applyMiddleware, combineReducers, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
+import { reducer as formReducer } from 'redux-form';
 
 import { Store } from 'reducers/types';
 import sagaMiddleware, { runSagaMiddleware } from 'sagas';
@@ -9,6 +10,7 @@ import user from 'reducers/user';
 const combinedReducers = combineReducers({
   router,
   user,
+  form: formReducer,
 });
 
 const enhancer = composeWithDevTools(
