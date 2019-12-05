@@ -3,7 +3,7 @@ import { takeLatest } from 'redux-saga/effects';
 
 import { Types } from 'actions/user';
 
-// eslint-disable-next-line no-empty-function
+// eslint-disable-next-line @typescript-eslint/no-empty-function
 function* userLogin(): SagaIterator {}
 
 function* permissionSaga(): SagaIterator {
