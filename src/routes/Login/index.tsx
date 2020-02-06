@@ -53,7 +53,7 @@ const Login = (): JSX.Element => {
     >
       <Container maxWidth="sm">
         <div className={classes.container}>
-          <HeaderComponent title={strings.administration} />
+          <HeaderComponent title={strings.management} />
           <form onSubmit={handleSubmit} className={classes.space}>
             <FormControl fullWidth>
               <Field
@@ -73,7 +73,7 @@ const Login = (): JSX.Element => {
                 component={RequestField}
               />
               <Button variant="contained" color="secondary" size="large">
-                {strings.access}
+                {strings.logIn}
               </Button>
             </FormControl>
           </form>

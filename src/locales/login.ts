@@ -1,9 +1,9 @@
 const login = {
-  administration: 'Adminstração',
-  access: 'Acessar',
-  required: 'Requerido',
-  invalidName: 'Nome inválido',
-  invalidPasword: 'Senha inválida',
+  management: 'Management',
+  logIn: 'Log In',
+  required: 'Required',
+  invalidName: 'Invalid name',
+  invalidPasword: 'Invalid password',
   name: 'Name',
   password: 'Password',
 };
