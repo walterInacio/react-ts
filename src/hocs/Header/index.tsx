@@ -25,7 +25,7 @@ const HeaderComponent = ({ children, title }: Props): JSX.Element => {
   const [hideButton, setHideButton] = useState<boolean>(false);
 
   useEffect((): void => {
-    setHideButton(!matches)
+    setHideButton(!matches);
   }, [matches]);
 
   return (
