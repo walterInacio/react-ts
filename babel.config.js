@@ -12,6 +12,8 @@ module.exports = api => {
             locales: './src/locales',
             routes: './src/routes',
             styles: './src/styles',
+            hocs: './src/hocs',
+            api: './src/api',
           },
           root: './src',
         },
